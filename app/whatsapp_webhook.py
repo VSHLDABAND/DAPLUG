@@ -28,7 +28,7 @@ def _verify_token() -> str:
 
 
 def _app_secret() -> str:
-    return os.getenv("c65d4d1bbac3552e190cb52e5a7067050673d50ff01c2497", "")
+    return os.getenv("56bf52a1453e05fd309ca14645406370", "")
 
 
 @router.get("")
