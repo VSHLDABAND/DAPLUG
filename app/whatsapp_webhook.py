@@ -24,11 +24,11 @@ DIRECT_INBOX_NAME = "DA'PLUG Direct Inbox"
 
 
 def _verify_token() -> str:
-    return os.getenv("WHATSAPP_VERIFY_TOKEN", "")
+    return os.getenv("EAAaZAbstuKpcBS2ZC13PbRqOSbhPkU09lO6dK8NfihVeEZAyQlKVNcckHhPffn60ZC2M6z1DNUIBQDRG4IZBwQKdenQUi4ZCudVGml9kgCCBMB7ix6yNGJhK1RRZCMVpfvMCZCtpjmAXkVHfs96P7ZCLf2MNwN2dZCBHkfxiAwJkwr9m0aF2dqApZBztaZC9VNhG2QNhTcbzcIDA6ftwANu4HLUnWJEpeWgyG3dR1tgZCyR4wcjMzYkNbaBS80iF6hURwD2iaM5MmUWZCFZA17UDG0YRWxAvOMv", "")
 
 
 def _app_secret() -> str:
-    return os.getenv("WHATSAPP_APP_SECRET", "")
+    return os.getenv("c65d4d1bbac3552e190cb52e5a7067050673d50ff01c2497", "")
 
 
 @router.get("")
