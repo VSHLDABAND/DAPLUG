@@ -118,3 +118,4 @@ This foundation deliberately avoids requiring React build tooling, remote fonts,
 ## Broker Feed workflow
 
 See [`docs/BROKER_FEED_PLAN.md`](docs/BROKER_FEED_PLAN.md) for the primary product workflow, how to import an exported group chat, current implementation scope and WhatsApp access limitations. The Broker Feed is separate from verified inventory: raw broker messages become candidates, are matched against manually entered demand, and require human verification before promotion to inventory.
+# DAPLUG
