@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c111b" />
+  <title>Property OS</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div id="toast" class="toast" role="status"></div>
+  <div id="auth-screen" class="auth-screen hidden">
+    <div class="auth-card">
+      <div class="brand-mark large">P<span>OS</span></div>
+      <p class="eyebrow">REAL ESTATE WORKSPACE</p>
+      <h1 id="auth-title">Welcome back</h1>
+      <p id="auth-subtitle" class="muted">Sign in to your local Property OS workspace.</p>
+      <form id="auth-form" class="stack-form">
+        <label id="auth-fullname-wrap" class="hidden">Full name<input id="auth-fullname" autocomplete="name" /></label>
+        <label>Username<input id="auth-username" autocomplete="username" required minlength="3" /></label>
+        <label>Password<input id="auth-password" type="password" autocomplete="current-password" required minlength="10" /></label>
+        <button class="btn primary full" type="submit" id="auth-submit">Sign in</button>
+      </form>
+      <p class="auth-foot">Local-first · No subscription · Your data stays on your machine</p>
+    </div>
+  </div>
+
+  <div id="app-shell" class="app-shell hidden">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">P<span>OS</span></div><div><strong>PROPERTY OS</strong><small>REAL ESTATE WORKSPACE</small></div></div>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="nav-list">
+        <button class="nav-item active" data-view="overview"><span class="nav-icon">◫</span><span>Overview</span></button>
+        <button class="nav-item" data-view="leads"><span class="nav-icon">◎</span><span>Leads & Clients</span><kbd>N</kbd></button>
+        <button class="nav-item" data-view="broker-feed"><span class="nav-icon">▤</span><span>WhatsApp Broker Feed</span><span class="nav-dot"></span></button>
+        <button class="nav-item" data-view="matching"><span class="nav-icon">⤢</span><span>Property Matching</span></button>
+        <button class="nav-item" data-view="properties"><span class="nav-icon">⌂</span><span>Verified Inventory</span></button>
+      </nav>
+      <div class="workspace-label separated">OPERATIONS</div>
+      <nav class="nav-list">
+        <button class="nav-item" data-view="tasks"><span class="nav-icon">◷</span><span>Follow-ups & Tasks</span></button>
+        <button class="nav-item" data-view="projects"><span class="nav-icon">▦</span><span>Builder Projects</span><span class="soon">LATER</span></button>
+        <button class="nav-item" data-view="deals"><span class="nav-icon">⇄</span><span>Deals & Negotiations</span><span class="soon">LATER</span></button>
+      </nav>
+      <div class="workspace-label separated">INSIGHTS</div>
+      <nav class="nav-list">
+        <button class="nav-item" data-view="analytics"><span class="nav-icon">▥</span><span>Analytics & Reports</span><span class="soon">LATER</span></button>
+        <button class="nav-item" data-view="team"><span class="nav-icon">♧</span><span>Team</span></button>
+        <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span><span>Settings</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="local-status"><span class="status-led"></span><div><strong>Local workspace</strong><small>Data stored on this device</small></div></div>
+        <div class="user-mini"><div class="avatar" id="user-avatar">U</div><div class="user-meta"><strong id="user-name">User</strong><small id="user-role">Administrator</small></div><button id="logout-btn" class="icon-button" title="Sign out">↗</button></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button id="mobile-menu" class="icon-button mobile-only">☰</button>
+        <div class="breadcrumbs"><span>Workspace</span><b>/</b><strong id="page-crumb">Overview</strong></div>
+        <div class="top-actions">
+          <div class="searchbox"><span>⌕</span><input id="global-search" placeholder="Search this section…" /><kbd>⌘ K</kbd></div>
+          <button class="btn primary top-add" id="global-add"><span>＋</span> Add New Lead</button>
+        </div>
+      </header>
+      <section id="view-container" class="view-container"></section>
+      <footer class="app-footer"><span>PROPERTY OS V2.1 · LOCAL BROKER SOURCING</span><span>LOCAL-FIRST · BUILT FOR YOUR WORKFLOW</span></footer>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
