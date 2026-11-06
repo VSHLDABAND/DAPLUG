@@ -24,7 +24,7 @@ DIRECT_INBOX_NAME = "DA'PLUG Direct Inbox"
 
 
 def _verify_token() -> str:
-    return os.getenv("EAAaZAbstuKpcBS2ZC13PbRqOSbhPkU09lO6dK8NfihVeEZAyQlKVNcckHhPffn60ZC2M6z1DNUIBQDRG4IZBwQKdenQUi4ZCudVGml9kgCCBMB7ix6yNGJhK1RRZCMVpfvMCZCtpjmAXkVHfs96P7ZCLf2MNwN2dZCBHkfxiAwJkwr9m0aF2dqApZBztaZC9VNhG2QNhTcbzcIDA6ftwANu4HLUnWJEpeWgyG3dR1tgZCyR4wcjMzYkNbaBS80iF6hURwD2iaM5MmUWZCFZA17UDG0YRWxAvOMv", "")
+    return os.getenv("daplug_live_token_1312", "")
 
 
 def _app_secret() -> str:
